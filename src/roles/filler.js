@@ -13,7 +13,7 @@ class Filler extends MetaRole {
     this.setBuildDefaults(room, options)
     let build = [MOVE, CARRY, WORK]
     if (options.carry_only) {
-      build = [MOVE, CARRY]
+      build = [MOVE, CARRY, CARRY]
     }
     return Creep.buildFromTemplate(build, options.energy)
   }
