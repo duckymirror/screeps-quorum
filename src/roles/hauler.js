@@ -10,7 +10,7 @@ class Hauler extends MetaRole {
 
   getBuild (room, options) {
     this.setBuildDefaults(room, options)
-    return Creep.buildFromTemplate([MOVE, CARRY], options.energy)
+    return Creep.buildFromTemplate([MOVE, CARRY, CARRY], options.energy)
   }
 }
 
